@@ -22,7 +22,7 @@ const FormControl = ({ addTodo }) => {
 
 	return (
 		<>
-			<div className="max-w-lg mx-auto mt-5">
+			<div className="lg:max-w-xl md:max-w-md max-w-sm mx-auto mt-5">
 				<form
 					onSubmit={handleSubmit}
 					action=""

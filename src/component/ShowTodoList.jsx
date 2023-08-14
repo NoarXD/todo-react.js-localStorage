@@ -8,15 +8,15 @@ const ShowTodoList = ({ todo, deleteTodo, editTodo }) => {
 
 	return (
 		<>
-			<div className="max-w-screen-lg mx-auto bg-white mt-10 rounded-lg shadow-lg">
+			<div className="xl:max-w-screen-lg md:max-w-2xl mx-auto max-w-md lg:max-w-4xl bg-white mt-10 rounded-lg shadow-lg overflow-x-hidden">
 				<table className="text-sm text-left w-full">
 					<thead className="bg-gray-50">
 						<tr>
 							<th className="px-6 py-3">Title</th>
 							<th className="px-6 py-3">Date</th>
 							<th className="px-6 py-3">Time</th>
-							<th className="px-6 py-3">Edit</th>
-							<th className="px-6 py-3">Delete</th>
+							<th className="py-3 w-10">Edit</th>
+							<th className="py-3 w-10">Delete</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -25,7 +25,7 @@ const ShowTodoList = ({ todo, deleteTodo, editTodo }) => {
 								<td className="px-6 py-4">{val.title}</td>
 								<td className="px-6 py-4">{val.date.split("T")[0]}</td>
 								<td className="px-6 py-4">{val.date.split("T")[1]}</td>
-								<td className="px-6 py-4 w-20">
+								<td className="py-4 px-1 w-10">
 									<button
 										className="bg-blue-500 py-1 px-2 text-white rounded-md hover:bg-blue-600 duration-500"
 										onClick={() => {
@@ -35,7 +35,7 @@ const ShowTodoList = ({ todo, deleteTodo, editTodo }) => {
 										Edit
 									</button>
 								</td>
-								<td className="px-6 py-4 w-20">
+								<td className="py-4 px-1 w-10">
 									<button
 										className="bg-red-500 py-1 px-2 text-white rounded-md hover:bg-red-600 duration-500"
 										onClick={() => handleDelete(index)}
