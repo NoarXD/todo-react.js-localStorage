@@ -22,7 +22,7 @@ const ShowTodoList = ({ todo, deleteTodo, editTodo }) => {
 					<tbody>
 						{todo?.map((val, index) => (
 							<tr key={index} className="border-b">
-								<td className="px-6 py-4">{val.title}</td>
+								<td className="px-6 py-4 ">{val.title}</td>
 								<td className="px-6 py-4">{val.date.split("T")[0]}</td>
 								<td className="px-6 py-4">{val.date.split("T")[1]}</td>
 								<td className="py-4 px-1 w-10">
